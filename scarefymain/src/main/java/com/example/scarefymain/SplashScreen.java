@@ -23,7 +23,7 @@ public class SplashScreen extends AppCompatActivity {
         @Override
         public void run() {
             SystemClock.sleep(3000);
-            Intent intent = new Intent(SplashScreen.this,Menu_activity.class);
+            Intent intent = new Intent(SplashScreen.this,MainMenu.class);
             startActivity(intent);
             finish();
         }

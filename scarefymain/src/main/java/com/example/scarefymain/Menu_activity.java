@@ -8,6 +8,8 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.example.scarefymain.Info_Pages.Ara_Pages;
+import com.example.scarefymain.Info_Pages.Fic_Pages;
 import com.example.scarefymain.Info_Pages.Kat_Pages;
 import com.example.scarefymain.R;
 
@@ -29,10 +31,10 @@ public class Menu_activity extends Activity {
 
     private AdapterView.OnItemClickListener mMessageClickedHandler = new AdapterView.OnItemClickListener() {
         public void onItemClick(AdapterView parent, View v, int position, long id) {
-            // Do something in response to the click
+
             Intent to_Kat = new Intent(Menu_activity.this,Kat_Pages.class);
-            Intent to_Ara = new Intent(Menu_activity.this,MainActivity.class);
-            Intent to_Fic = new Intent(Menu_activity.this,MainActivity.class);
+            Intent to_Ara = new Intent(Menu_activity.this,Ara_Pages.class);
+            Intent to_Fic = new Intent(Menu_activity.this,Fic_Pages.class);
             if (position == 0)startActivity(to_Kat);
             if (position == 1)startActivity(to_Ara);
             if (position == 2)startActivity(to_Fic);

@@ -12,42 +12,60 @@
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true">
-
+        <com.google.vr.sdk.widgets.pano.VrPanoramaView
+            android:id="@+id/pano_view"
+            android:layout_width="match_parent"
+            android:scrollbars="@null"
+            android:layout_height="240dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Samples"
+            android:text="Start "
             android:id="@+id/btn1"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="112dp" />
+            android:layout_below="@+id/pano_view"
+            android:layout_alignParentStart="true"
+            android:layout_alignEnd="@+id/btnhelp" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/button2"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-            android:text="Help" />
+            android:id="@+id/btnhelp"
+            android:text="Help"
+            android:layout_below="@+id/btn1"
+            android:layout_alignEnd="@+id/pano_view"
+            android:layout_alignParentStart="true" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/button3"
+            android:id="@+id/btnset"
             android:text="Settings"
-            android:layout_below="@+id/button2"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="73dp" />
+            android:layout_below="@+id/btnhelp"
+            android:layout_alignEnd="@+id/pano_view"
+            android:layout_alignStart="@+id/btnhelp" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btnAbout"
             android:text="About Us"
+            android:layout_above="@+id/button"
+            android:layout_alignParentStart="true"
+            android:layout_alignEnd="@+id/btnset" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quiz"
+            android:id="@+id/button"
             android:layout_alignParentBottom="true"
-            android:layout_alignStart="@+id/button3" />
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/btnset" />
     </RelativeLayout>
 </RelativeLayout>

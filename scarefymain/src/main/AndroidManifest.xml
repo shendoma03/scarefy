@@ -10,19 +10,34 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
         <activity android:name=".SplashScreen">
+
+        </activity>
+        <activity android:name=".MainMenu" />
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".Menu_activity" />
+        <activity android:name=".Info_Pages.Kat_Pages" />
+        <activity android:name=".stages_all_kat.Kat_1" />
+        <activity android:name=".stages_all_kat.Kat_2" />
+        <activity android:name=".stages_all_kat.Kat_3" />
+        <activity android:name=".Info_Pages.Fic_Pages" />
+        <activity android:name=".stages_all_fic.Fic_1" />
+        <activity android:name=".stages_all_fic.Fic_2" />
+        <activity android:name=".stages_all_fic.Fic_3" />
+        <activity android:name=".Info_Pages.Ara_Pages" />
+        <activity android:name=".stages_all_ara.Ara_1" />
+        <activity android:name=".stages_all_ara.Ara_2" />
+        <activity android:name=".stages_all_ara.Ara_3" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity android:name=".HelpActivity" />
+        <activity android:name=".Survey">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainMenu" />
-        <activity android:name=".AboutActivity" />
-        <activity android:name=".Menu_activity" />
-        <activity android:name=".Main2Activity" />
-        <activity android:name=".Info_Pages.Kat_Pages" />
-        <activity android:name=".stages_all.Kat_1" />
-        <activity android:name=".stages_all.Kat_2"></activity>
     </application>
 
 </manifest>
