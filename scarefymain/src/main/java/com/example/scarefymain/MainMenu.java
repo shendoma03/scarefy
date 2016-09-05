@@ -74,6 +74,15 @@ public class MainMenu extends AppCompatActivity {
                 startActivity(set);
             }
         });
+
+        Button survey = (Button)findViewById(R.id.btnsurvey);
+        survey.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent set = new Intent(MainMenu.this,Survey.class);
+                startActivity(set);
+            }
+        });
         panoWidgetView = (VrPanoramaView) findViewById(R.id.pano_view);
         panoWidgetView.setEventListener(new ActivityEventListener());
         handleIntent(getIntent());

@@ -10,7 +10,11 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
         <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".MainMenu" />
         <activity android:name=".AboutActivity" />
@@ -32,11 +36,7 @@
             android:label="@string/title_activity_settings" />
         <activity android:name=".HelpActivity" />
         <activity android:name=".Survey">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
